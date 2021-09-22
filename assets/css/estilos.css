@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header h3{
+    font-size: 30px;
+    font-family: 'Rock Salt', cursive;
+    color: rgb(255, 187, 0);
+    text-shadow:3px 3px 4px rgb(255, 0, 234);
+}
+
+
+.contenedor{
+    max-width: 3000px;
+    width: 90%;
+    margin: auto;
+}
+h3{
+    font-size: 50px;
+    margin: 100px;
+    text-shadow: 4px 3px 3px rgb(167, 164, 164);
+}
+li{
+    list-style: none;
+    margin-right: 25px;
+    color: white;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    background: none;
+ 
+}
+.menu a:hover{
+    background: none; 
+    filter:blur(1px) ;
+}
+ul{
+    display: flex;
+
+}
+.titulo{
+    text-align: center;
+    margin-top: 150px;
+}
+h1{
+    font-size: 60px;
+    margin: 0px;
+    text-shadow: 7px 7px 15px rgb(0, 255, 55);
+    color: rgb(99, 34, 250);
+}
+h2{
+    font-size: 40px;
+    text-shadow: 5px 7px 15px rgb(0, 255, 55);
+    color: rgb(97, 34, 247);
+}
+a{
+    font-size: 20px;
+    background-color: rgb(30, 209, 149);
+    padding: 20px 30px;
+    color: rgb(174, 0, 255);
+    display: inline-block;
+}
+a:hover{
+    background-color:rgb(174, 0, 255) ;
+    color:rgb(30, 209, 149);
+}
+
+header{
+    background: url(assets/img/55762.jpg );
+    height: 100vh;
+    background-size: cover;
+}
+h3{
+    text-align: center;
+}
+#contenedor_sobre_mi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contenedor_parrafo{
+    width: 45%;
+    padding: 15px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: 5px 5px 5px rgb(245, 0, 253), 0 0 3px rgb(0, 183, 255);
+    background: linear-gradient(rgb(165, 243, 243), rgb(247, 125, 247));
+}
+p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+#contenedor_sobre_mi img{
+box-shadow: 9px 5px 8px turquoise, 0 0 10px purple;
+}
+
+/*seccion mis pasatiempos*/
+#contenedor_mis_pasatiempos{
+    display: flex;
+    justify-content: space-around;
+}
+.cajas{
+    width: 25%;
+    box-shadow: 9px 5px 8px rgb(123, 252, 187),-3px -3px 9px rgb(243, 128, 253) ;
+    padding: 20px;
+    background: linear-gradient(rgb(245, 168, 252), rgb(184, 248, 215));
+}
+.cajas img{
+    width: 100%;
+    
+}
+
+span{
+    font-size: 80px;
+    color: darkred;
+}
+.owl-nav{
+    text-align: center;
+   
+}
+.owl-nav:hover{
+    transform: scale(1.2);
+}
+footer{
+    text-align: center;
+    background-color: rgb(8, 0, 128);
+    color: seashell;
+    padding: 50px;
+
+    
+}
+footer a{
+    background: none;
+}
+footer a:hover{
+    background: none;
+    transform: scale(1.3);
+}
+footer h4{
+    font-size: 30px;
+}
+#whatsapp{
+    position: fixed;
+    background: none;
+    top: 85%;
+    right: 0.2%;
+ }
+ #whatsapp a{
+     background: none;
+ }
+
+
+
+
+
+
+.menu-icon{
+    display: none;
+}
+
+ /*ESTO NOS PERMITE ADAPTAR LA PANTALLA A CELULARES Y TABLETAS*/
+ 
+
+ @media(max-width:1024px){
+    nav{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: rgb(231, 157, 231);
+        width: 100%;
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        display: flex;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu h3{
+        margin: 10px 0 0 0;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .titulo{
+        margin-top: 50px    ;
+    }
+    #contenedor_sobre_mi{
+        flex-direction: column;
+    }
+    #contenedor_sobre_mi img{
+        width: 90%;
+    }
+    #contenedor_parrafo{
+        width: 90%;
+        margin-top: 20px;
+    }
+    #contenedor_mis_pasatiempos{
+        flex-direction: column;
+    }
+    .cajas{
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+ }
+ 
+
